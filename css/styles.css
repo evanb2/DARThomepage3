@@ -71,6 +71,11 @@ body {
     padding-top: 40px;
 }
 
+#row-footer {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
 #col-1 {
     margin-top: 80px;
 }
@@ -145,4 +150,10 @@ h2  {
 
 #jumbotron-header {
     font-size: 40px;
+}
+
+.footer{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
