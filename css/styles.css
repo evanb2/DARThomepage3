@@ -49,20 +49,26 @@ body {
 
 .row {
     padding-left: 8%;
+    padding-right: 8%;
 }
 
 #row-1 {
-    padding-bottom: 100px;
+    padding-bottom: 180px;
 }
 
 #row-3 {
+    padding-top: 80px;
     padding-right: 8%;
 }
 
 #row-4 {
     padding-top: 20px;
     padding-right: 10%;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+}
+
+#row-6 {
+    padding-top: 40px;
 }
 
 #col-1 {
@@ -71,7 +77,6 @@ body {
 
 #col-2 {
     margin-top: 150px;
-    padding-right: 10%;
 }
 
 #col-3 {
@@ -80,12 +85,10 @@ body {
 
 #col-4 {
     text-align: center;
-
 }
 
 #col-5 {
     text-align: center;
-
 }
 
 #sign-up {
@@ -123,4 +126,19 @@ h2  {
 #metadata {
     text-align: center;
     font-size: 40px;
+}
+
+#dart-team {
+    font-size: 40px;
+}
+
+.name {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.team {
+    width: 350px;
+    padding-left: 60px;
+    padding-bottom: 100px;
 }
