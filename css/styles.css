@@ -40,12 +40,17 @@ body {
         display: block;
         text-align: center;
     }
-    #sign-up {
-        display: block;
-        float: none;
-        /*margin-left: auto;
-        margin-right: auto;*/
+    body {
         text-align: center;
+    }
+    .jumbotron {
+        margin-top: 40px;
+    }
+    #sign-up {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px !important;
+        display: block;
     }
 }
 
