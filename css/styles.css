@@ -1,4 +1,11 @@
-@media screen and (min-width:768px){
+body {
+    background-color: #DBDBDB;
+    padding-top: 50px;
+    color: #595959;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width:992px){
     .navbar-brand-centered {
         position: absolute;
         left: 45%;
@@ -13,33 +20,92 @@
     }
 }
 
-body {
-    background-color: #DBDBDB;
-    padding-top: 50px;
-    color: #595959;
-    /*font-family: 'Open Sans', sans-serif;*/
+@media screen and (max-width:991px){
+    .navbar-brand-centered {
+        float: left;
+        left: 5%;
+        display: inline-block;
+    }
+    .navbar-fixed-top .navbar-nav>li {
+        display: inline-block;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+
+}
+
+@media screen and (max-width:770px){
+    .navbar-fixed-top .navbar-nav>li {
+        display: block;
+        text-align: center;
+    }
+    #sign-up {
+        display: block;
+        float: none;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px){
+    .container {
+        width: 320px;
+    }
+
+
 }
 
 #logo {
     max-width: 300px;
 }
 
+/*.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px !important;
+    display: block;
+}*/
+
+/*.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px !important;
+    display: block;
+
+}*/
+
 .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
     color: #7899be;
-    padding-top: 30px;
+    padding: 30px;
     font-size: 18px;
+    display: block;
+}
+a {
+    cursor: pointer;
 }
 
 .navbar {
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: black;
+    border: none;
 }
 
 .navbar-center {
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
 }
+
+
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    background-color: black;
+}
+
+.navbar-toggle {
+    margin-top: 22px;
+}
+
 
 .jumbotron {
     padding-left: 10%;
@@ -113,13 +179,6 @@ h2  {
     font-size: 25px;
 }
 
-.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-    background-color: black;
-}
-
-.navbar-toggle {
-    margin-top: 22px;
-}
 
 #logos-1, #social-media {
     text-align: center;
