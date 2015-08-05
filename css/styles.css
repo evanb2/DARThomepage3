@@ -27,11 +27,13 @@ h3 {
 
 #logo { /** logo starts large at fullscreen */
     max-width: 400px;
-    margin-top: 10px;
+    margin-top: -4px;
+    vertical-align: middle;
 }
+
 .navbar {
     width: 100%;
-    height: 110px;
+    height: 80px;
     background-color: black;
     border: none;
 }
@@ -41,7 +43,7 @@ h3 {
     padding: 30px;
     font-size: 18px;
     display: block;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 /*.navbar-fixed-top .navbar-nav>li {
     display: inline-block;
@@ -60,7 +62,7 @@ h3 {
 }
 
 .navbar-toggle { /** Mobile Menu Button*/
-    margin-top: 40px;
+    margin-top: 12px;
 }
 
 
@@ -167,26 +169,24 @@ h3 {
 }
 
 @media screen and (min-width:991px) and (max-width: 1199px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        margin-left: -200px !important;
+    .navbar-brand {
+        margin-left: -10px !important;
         display: block;
     }
     .navbar-fixed-top .navbar-nav>li {
         display: inline-block;
-        margin-right: -20px;
-        margin-left: -20px;
-        /*text-align: center;*/
+        margin-right: -5px;
+        margin-left: -5px;
+        text-align: center;
     }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
         margin-left: -80px;
     }
 }
 
 @media screen and (min-width: 770px) and (max-width: 990px){
-    .navbar-brand-centered {
+    .navbar-brand {
         float: left;
         left: 5%;
         display: inline-block;
@@ -201,6 +201,11 @@ h3 {
     }
     .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
         margin-top: 0px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 990px){
+    .navbar {
+        height: 60px;
     }
 }
 
@@ -231,10 +236,15 @@ h3 {
 @media screen and (max-width:500px){ /** Scale for mobile */
     #logo {
         display: block;
-        margin-top: 22px !important;
+        /*margin-top: 22px !important;*/
         max-width: 30%;
         max-height: 30px;
-        position: relative;
-        z-index: 1001;
+    }
+    .navbar {
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .navbar-toggle { /** Mobile Menu Button*/
+        margin-top: 8px;
     }
 }
