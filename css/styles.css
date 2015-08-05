@@ -1,3 +1,8 @@
+p {
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
 body {
     background-color: #DBDBDB;
     padding-top: 50px;
@@ -5,119 +10,70 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (min-width:992px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 45%;
-        display: inline-block;
-        margin-right: 5%;
-        /*width: 500px;*/
-        /*text-align: center;*/
-    }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    }
+h2 {
+    font-size: 30px;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin-top: 30px;
+}
+h3 {
+    font-size: 18px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
 }
 
-@media screen and (max-width:991px){
-    .navbar-brand-centered {
-        float: left;
-        left: 5%;
-        display: inline-block;
-    }
-    .navbar-fixed-top .navbar-nav>li {
-        display: inline-block;
-        margin-right: -20px;
-        margin-left: -20px;
-    }
-
-
+#logo { /** logo starts large at fullscreen */
+    max-width: 400px;
+    margin-top: 10px;
 }
-
-@media screen and (max-width:770px){
-    .navbar-fixed-top .navbar-nav>li {
-        display: block;
-        text-align: center;
-    }
-    body {
-        text-align: center;
-    }
-    .jumbotron {
-        margin-top: 40px;
-    }
-    #sign-up {
-        position: absolute;
-        left: 50%;
-        margin-left: -100px !important;
-        display: block;
-    }
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    border: none;
 }
-
-@media screen and (max-width:320px){
-    .container {
-        width: 320px;
-    }
-
-
-}
-
-#logo {
-    max-width: 300px;
-}
-
-/*.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    margin-left: -150px !important;
-    display: block;
-}*/
-
-/*.brand {
-    position: absolute;
-    left: 50%;
-    margin-left: -150px !important;
-    display: block;
-
-}*/
 
 .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
     color: #7899be;
     padding: 30px;
     font-size: 18px;
     display: block;
+    margin-top: 15px;
 }
-a {
-    cursor: pointer;
-}
+/*.navbar-fixed-top .navbar-nav>li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}*/
 
-.navbar {
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    border: none;
-}
 
-.navbar-center {
+/*.navbar-center {
     margin: auto;
-}
+}*/
 
 
-.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing { /** Mobile Menu Drop Down*/
     background-color: black;
 }
 
-.navbar-toggle {
-    margin-top: 22px;
+.navbar-toggle { /** Mobile Menu Button*/
+    margin-top: 40px;
 }
 
 
-.jumbotron {
+.jumbotron { /** Featured section for DSP's */
     padding-left: 10%;
     padding-right: 10%;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 50px;
+}
+
+#jumbotron-header {
+    font-size: 40px;
 }
 
 .row {
@@ -130,6 +86,7 @@ a {
 }
 
 #row-3 {
+
     padding-top: 80px;
     padding-right: 8%;
 }
@@ -149,23 +106,11 @@ a {
     padding-right: 30%;
 }
 
-#col-1 {
+#col-1, #col-2 {
     margin-top: 80px;
 }
 
-#col-2 {
-    margin-top: 80px;
-}
-
-#col-3 {
-    text-align: center;
-}
-
-#col-4 {
-    text-align: center;
-}
-
-#col-5 {
+#col-3, #col-4, #col-5 {
     text-align: center;
 }
 
@@ -180,27 +125,17 @@ a {
     margin-left: 100px;
 }
 
-h2  {
-    font-size: 25px;
-}
-
-
 #logos-1, #social-media {
     text-align: center;
 }
 
-#logos-1 div, #social-media div {
+#logos-1 div, #social-media div, #team-members div {
   display: inline-block;
   padding: 20px;
 }
 
 
-#metadata {
-    text-align: center;
-    font-size: 40px;
-}
-
-#dart-team {
+#metadata, #dart-team {
     font-size: 40px;
 }
 
@@ -215,12 +150,91 @@ h2  {
     padding-bottom: 100px;
 }
 
-#jumbotron-header {
-    font-size: 40px;
-}
-
 .footer{
     background-color: black;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+/**---------------RESPONSIVE DESIGN--------------*/
+
+@media screen and (min-width:1200px){
+    .navbar-fixed-top .navbar-nav>li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width: 1199px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        margin-left: -200px !important;
+        display: block;
+    }
+    .navbar-fixed-top .navbar-nav>li {
+        display: inline-block;
+        margin-right: -20px;
+        margin-left: -20px;
+        /*text-align: center;*/
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px){
+    .navbar-brand-centered {
+        float: left;
+        left: 5%;
+        display: inline-block;
+    }
+    .navbar-fixed-top .navbar-nav>li {
+        display: inline-block;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    #logo { /** scales logo down to fit */
+        max-width: 300px !important;
+    }
+    .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:769px){
+    .navbar-fixed-top .navbar-nav>li {
+        display: block;
+        text-align: center;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .jumbotron {
+        margin-top: 40px;
+    }
+    #logo { /** scales logo down to fit */
+        max-width: 300px !important;
+    }
+    #sign-up {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px !important;
+        display: block;
+    }
+    #team-members {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px){ /** Scale for mobile */
+    #logo {
+        display: block;
+        margin-top: 22px !important;
+        max-width: 30%;
+        max-height: 30px;
+        position: relative;
+        z-index: 1001;
+    }
 }
