@@ -1,11 +1,19 @@
 p {
     margin: 1em 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+div#team-members.row p {
+    font-size: 1em;
+}
+
+.jumbotron p {
+    font-size: 1em;
 }
 
 body {
     background-color: #DBDBDB;
-    padding-top: 50px;
+    padding-top: 10px;
     color: #595959;
     font-family: 'Open Sans', sans-serif;
 }
@@ -34,8 +42,9 @@ h3 {
 .navbar {
     width: 100%;
     height: 80px;
-    background-color: black;
+    background-color: white;
     border: none;
+    opacity: .99;
 }
 
 .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
@@ -45,17 +54,6 @@ h3 {
     display: block;
     margin-top: 12px;
 }
-/*.navbar-fixed-top .navbar-nav>li {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
-}*/
-
-
-/*.navbar-center {
-    margin: auto;
-}*/
-
 
 .navbar-collapse.collapse.in, .navbar-collapse.collapsing { /** Mobile Menu Drop Down*/
     background-color: black;
@@ -65,17 +63,14 @@ h3 {
     margin-top: 12px;
 }
 
-
 .jumbotron { /** Featured section for DSP's */
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
+    padding: 10px;
+    margin: 100px;
+    margin-top: 50px;
 }
 
 #jumbotron-header {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .row {
@@ -84,23 +79,22 @@ h3 {
 }
 
 #row-1 {
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#row-3 {
-
-    padding-top: 80px;
-    padding-right: 8%;
-}
-
-#row-4 {
-    padding-top: 20px;
-    padding-right: 10%;
+#about-metadata {
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
-#row-6 {
-    padding-top: 40px;
+#team-members {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.light-page{
+    background-color: #F5F5F5;
 }
 
 #row-footer {
@@ -119,7 +113,7 @@ h3 {
 #sign-up {
     border-radius: 20px;
     color: white;
-    background-color: black;
+    background-color: #485A71;
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -135,7 +129,6 @@ h3 {
   display: inline-block;
   padding: 20px;
 }
-
 
 #metadata, #dart-team {
     font-size: 40px;
@@ -154,8 +147,8 @@ h3 {
 
 .footer{
     background-color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /**---------------RESPONSIVE DESIGN--------------*/
@@ -183,6 +176,11 @@ h3 {
     .navbar>.container-fluid .navbar-brand {
         margin-left: -80px;
     }
+
+    #col-2 {
+        width: 80%;
+    }
+
 }
 
 @media screen and (min-width: 770px) and (max-width: 990px){
@@ -207,18 +205,29 @@ h3 {
     .navbar {
         height: 60px;
     }
+    #col-2 {
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width:769px){
+    .navbar-fixed-top .navbar-nav>li>a {/** Menu Items in Nav Bar */
+        padding: 10px;
+    }
     .navbar-fixed-top .navbar-nav>li {
         display: block;
         text-align: center;
         margin-right: -20px;
         margin-left: -20px;
     }
+    #row-1 {
+        padding-bottom: 80px;
+    }
     .jumbotron {
         margin-top: 40px;
     }
+
     #logo { /** scales logo down to fit */
         max-width: 300px !important;
     }
@@ -246,5 +255,21 @@ h3 {
     }
     .navbar-toggle { /** Mobile Menu Button*/
         margin-top: 8px;
+    }
+    h1, #jumbotron-header {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    p, .jumbotron p {
+        font-size: 1em;
+    }
+    .jumbotron { /** Featured section for DSP's */
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
